@@ -1,0 +1,11 @@
+.black-and-white, .bright{
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+.black-and-white{
+    background-color: black;
+    color: white;    
+}
+.bright{
+    background-color: yellow;
+}
