@@ -89,3 +89,61 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+
+/*My stuff*/
+.container{
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header{
+  grid-column-start: span 2;
+  display: grid;
+  grid-template: auto /1fr 2fr;
+  .logo{
+    text-align: left;
+  }
+  .menu ul{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    list-style: none;
+    height: 100%;
+    li{
+      margin-top: auto;
+      margin-bottom: auto;
+      text-align: right;
+    }
+  }
+}
+
+.nav ul{
+  display: grid;
+  grid-template: 1fr/ repeat(3, 1fr);
+  list-style: none;
+  height:100%;
+}
+.sidebar{
+  grid-row-start: span 2;
+  display: grid;
+  grid-template: repeat(4, 1fr)/ 1fr;
+  gap: 50px;
+  div{
+    align-content: center;
+  }
+}
+.article{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  .card{
+    height: 200px;
+  }
+}
+.footer{
+  grid-column-start: span 2;
+}
